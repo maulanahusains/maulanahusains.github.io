@@ -6,11 +6,98 @@
     <link rel="stylesheet" href="dist/output.css" />
     <title>Personal Portfolio</title>
   </head>
-  <body>
-    <button
-      class="bg-sky-700 px-4 py-2 text-white hover:bg-sky-800 sm:px-8 sm:py-3">
-      ...
-    </button>
-    <a href="" class="bg-blue-800 p-4">cuk</a>
+  <body class="font-poppins bg-bkg">
+    <!-- This web using mobile first appoarch -->
+    <nav class="relative p-4 md:p-8 lg:p-10">
+      <div class="container m-auto flex items-center justify-between">
+        <img src="./src/assets/logo-light.png" alt="" class="w-18 h-14" />
+        <!-- Desktop -->
+        <ul
+          class="text-primary hidden items-center gap-6 text-center text-2xl lg:flex">
+          <li class="hover:text-secondary"><a href="">Home</a></li>
+          <li class="hover:text-secondary"><a href="">About</a></li>
+          <li class="hover:text-secondary"><a href="">Projects</a></li>
+          <li class="hover:text-secondary"><a href="">Contact</a></li>
+          <li>
+            <a
+              class="text-paragraph bg-secondary hover:bg-darkersecondary cursor-pointer rounded-lg px-4 py-3 text-center font-bold text-bkg"
+              >DOWNLOAD CV</a
+            >
+          </li>
+          <li class="flex items-center">
+            <button class="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8 text-black"
+                viewBox="0 0 512 512">
+                <circle
+                  cx="256"
+                  cy="256"
+                  r="208"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linejoin="round"
+                  stroke-width="32" />
+                <path
+                  d="M256 464c-114.88 0-208-93.12-208-208S141.12 48 256 48z" />
+              </svg>
+            </button>
+          </li>
+        </ul>
+
+        <!-- Hamburger svg -->
+        <button class="cursor-pointer lg:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="text-primary w-18 h-14"
+            viewBox="0 0 512 512">
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-miterlimit="10"
+              stroke-width="32"
+              d="M80 160h352M80 256h352M80 352h352" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile & Tablet -->
+      <div
+        class="absolute left-0 top-0 hidden h-screen w-screen flex-col gap-10 bg-bkg p-4 md:p-8 lg:hidden">
+        <div class="flex justify-between">
+          <img src="./src/assets/logo-light.png" alt="" class="w-18 h-14" />
+
+          <!-- Close svg -->
+          <button class="cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-18 text-primary h-14"
+              viewBox="0 0 512 512">
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="32"
+                d="M368 368L144 144M368 144L144 368" />
+            </svg>
+          </button>
+        </div>
+
+        <ul
+          class="text-primary flex w-full flex-col gap-6 text-center text-3xl">
+          <li class="hover:text-secondary"><a href="">Home</a></li>
+          <li class="hover:text-secondary"><a href="">About</a></li>
+          <li class="hover:text-secondary"><a href="">Projects</a></li>
+          <li class="hover:text-secondary"><a href="">Contact</a></li>
+        </ul>
+
+        <a
+          class="text-paragraph bg-secondary hover:bg-darkersecondary cursor-pointer rounded-lg px-2 py-2 text-center font-bold text-bkg"
+          >DOWNLOAD CV</a
+        >
+      </div>
+    </nav>
   </body>
 </html>
