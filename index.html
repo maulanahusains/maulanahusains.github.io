@@ -8,19 +8,31 @@
   </head>
   <body class="bg-bkg font-poppins">
     <!-- This web using mobile first appoarch -->
-    <nav class="relative p-4 md:p-8 lg:p-10">
+    <nav class="fixed left-0 right-0 bg-bkg px-4 py-2 md:px-8 md:py-2 lg:px-10">
       <div class="container mx-auto flex items-center justify-between">
         <img src="./src/assets/logo-light.png" alt="" class="w-18 h-14" />
         <!-- Desktop -->
         <ul
-          class="hidden items-center gap-6 text-center text-2xl text-primary lg:flex">
-          <li class="hover:text-secondary"><a href="">Home</a></li>
-          <li class="hover:text-secondary"><a href="">About</a></li>
-          <li class="hover:text-secondary"><a href="">Projects</a></li>
-          <li class="hover:text-secondary"><a href="">Contact</a></li>
+          class="hidden items-center gap-6 text-center text-xl text-primary lg:flex">
+          <li
+            class="border-1 border-solid border-secondary hover:border-b-2 hover:text-secondary">
+            <a href="">Home</a>
+          </li>
+          <li
+            class="border-1 border-solid border-secondary hover:border-b-2 hover:text-secondary">
+            <a href="">About</a>
+          </li>
+          <li
+            class="border-1 border-solid border-secondary hover:border-b-2 hover:text-secondary">
+            <a href="">Projects</a>
+          </li>
+          <li
+            class="border-1 border-solid border-secondary hover:border-b-2 hover:text-secondary">
+            <a href="">Contact</a>
+          </li>
           <li>
             <a
-              class="cursor-pointer rounded-lg border-4 border-solid border-darkersecondary px-4 py-3 text-center text-paragraph font-bold text-primary hover:bg-darkersecondary hover:text-bkg"
+              class="cursor-pointer rounded-lg border-4 border-solid border-darkersecondary px-3 py-2 text-center text-base font-bold text-primary hover:bg-darkersecondary hover:text-bkg"
               >DOWNLOAD CV</a
             >
           </li>
@@ -103,7 +115,7 @@
       <!-- Hero Section -->
       <section
         id="hero"
-        class="container mx-auto flex flex-col items-center justify-center gap-8 md:flex-row lg:flex-row">
+        class="container mx-auto mt-20 flex flex-col items-center justify-center gap-8 md:flex-row lg:flex-row">
         <img src="./src/assets/dummy.png" alt="" class="h-[330px] w-[330px]" />
         <div class="flex flex-col gap-4 lg:w-2/5">
           <div class="flex flex-col self-start">
@@ -203,39 +215,106 @@
 
       <section
         id="skills"
-        class="container mx-auto flex flex-col items-center justify-center gap-8">
+        class="container mx-auto flex flex-col items-center justify-center gap-2 pt-4 md:pt-8 lg:pt-10">
         <p class="text-3xl font-bold text-primary">Tech Stack</p>
 
         <div class="flex flex-col items-center gap-8">
-          <p class="text-2xl font-bold text-primary">
-            The tech that i familiar with:
-          </p>
-          <div class="flex flex-wrap justify-center gap-10">
-            <img src="./src/assets/icons/HTML.svg" class="w-16" alt="" />
-            <img src="./src/assets/icons/Bootstrap.svg" class="w-16" alt="" />
+          <p class="text-2xl text-primary">The tech that i familiar with:</p>
+          <div class="flex flex-wrap justify-center gap-16 *:drop-shadow-md">
+            <img
+              src="./src/assets/icons/HTML.svg"
+              class="w-16"
+              alt=""
+              data-te-toggle="tooltip"
+              title="HTML" />
+            <img
+              src="./src/assets/icons/CSS.svg"
+              class="w-16"
+              alt=""
+              data-te-toggle="tooltip"
+              title="CSS" />
+            <img
+              src="./src/assets/icons/Bootstrap.svg"
+              class="w-16"
+              alt=""
+              data-te-toggle="tooltip"
+              title="Bootstrap" />
             <img
               src="./src/assets/icons/TailwindCSS-Light.svg"
               class="w-16"
-              alt="" />
-            <img src="./src/assets/icons/JavaScript.svg" class="w-16" alt="" />
-            <img src="./src/assets/icons/VueJS-Light.svg" class="w-16" alt="" />
+              alt=""
+              data-te-toggle="tooltip"
+              title="TailwindCSS" />
+            <img
+              src="./src/assets/icons/JavaScript.svg"
+              class="w-16"
+              alt=""
+              data-te-toggle="tooltip"
+              title="JavaScript" />
+            <img
+              src="./src/assets/icons/VueJS-Light.svg"
+              class="w-16"
+              alt=""
+              data-te-toggle="tooltip"
+              title="VueJS" />
             <img
               src="./src/assets/icons/NodeJS-Light.svg"
               class="w-16"
-              alt="" />
+              alt=""
+              data-te-toggle="tooltip"
+              title="NodeJS" />
             <img
               src="./src/assets/icons/ExpressJS-Light.svg"
               class="w-16"
-              alt="" />
-            <img src="./src/assets/icons/Postman.svg" class="w-16" alt="" />
+              alt=""
+              data-te-toggle="tooltip"
+              title="ExpressJS" />
+
+            <!-- <img src="./src/assets/icons/PHP-Light.svg" class="w-16" alt="" /> -->
             <img
-              src="./src/assets/icons/Sequelize-Light.svg"
+              src="./src/assets/icons/Laravel-Light.svg"
               class="w-16"
-              alt="" />
-            <img src="./src/assets/icons/Git.svg" class="w-16" alt="" />
+              alt=""
+              data-te-toggle="tooltip"
+              title="Laravel" />
+            <img
+              src="./src/assets/icons/MySQL-Light.svg"
+              class="w-16"
+              alt=""
+              data-te-toggle="tooltip"
+              title="Laravel" />
+            <img
+              src="./src/assets/icons/PostgreSQL-Light.svg"
+              class="w-16"
+              alt=""
+              data-te-toggle="tooltip"
+              title="PostgreSQL" />
+            <img
+              src="./src/assets/icons/Postman.svg"
+              class="w-16"
+              alt=""
+              data-te-toggle="tooltip"
+              title="Postman" />
+            <img
+              src="./src/assets/icons/Git.svg"
+              class="w-16"
+              alt=""
+              data-te-toggle="tooltip"
+              title="Git" />
+            <img
+              src="./src/assets/icons/VSCode-Light.svg"
+              class="w-16"
+              alt=""
+              data-te-toggle="tooltip"
+              title="VSCode" />
           </div>
         </div>
       </section>
     </main>
+
+    <script type="module" src="src/js/app.js"></script>
+    <script
+      type="text/javascript"
+      src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"></script>
   </body>
 </html>
