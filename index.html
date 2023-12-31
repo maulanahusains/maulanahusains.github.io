@@ -8,8 +8,9 @@
   </head>
   <body class="bg-bkg font-poppins">
     <!-- This web using mobile first appoarch -->
-    <nav class="fixed left-0 right-0 bg-bkg px-4 py-2 md:px-8 md:py-2 lg:px-10">
-      <div class="container mx-auto flex items-center justify-between">
+    <nav
+      class="fixed left-0 right-0 z-10 bg-bkg px-2 py-2 md:px-8 md:py-2 lg:px-10">
+      <div class="mx-auto flex items-center justify-between md:container">
         <img src="./src/assets/logo-light.png" alt="" class="w-18 h-14" />
         <!-- Desktop -->
         <ul
@@ -115,14 +116,21 @@
       <!-- Hero Section -->
       <section
         id="hero"
-        class="container mx-auto mt-20 flex flex-col items-center justify-center gap-8 md:flex-row lg:flex-row">
-        <img src="./src/assets/dummy.png" alt="" class="h-[330px] w-[330px]" />
-        <div class="flex flex-col gap-4 lg:w-2/5">
-          <div class="flex flex-col self-start">
-            <h1 class="text-5xl font-bold text-primary">Hi, I am</h1>
-            <h1 class="text-5xl font-bold text-accent">Maulana Husein</h1>
-            <h1 class="text-5xl font-bold text-primary md:hidden">
-              Fullstack web dev
+        class="mt-20 flex flex-col items-start justify-center gap-8 md:container md:flex-row md:items-center lg:flex-row">
+        <img
+          src="./src/assets/dummy.png"
+          alt=""
+          class="h-[330px] w-[330px] self-center" />
+        <div class="flex flex-col gap-4 md:self-center lg:w-2/5">
+          <div class="flex flex-col items-start">
+            <h1 class="text-4xl font-bold text-primary md:text-5xl">
+              Hi, I am
+            </h1>
+            <h1 class="text-4xl font-bold text-accent md:text-5xl">
+              Maulana Husein
+            </h1>
+            <h1 class="text-4xl font-bold text-primary md:hidden md:text-5xl">
+              Fullstack Dev
             </h1>
           </div>
           <p
@@ -215,11 +223,13 @@
 
       <section
         id="skills"
-        class="container mx-auto flex flex-col items-center justify-center gap-2 pt-4 md:pt-8 lg:pt-10">
-        <p class="text-3xl font-bold text-primary">Tech Stack</p>
+        class="container mx-auto flex flex-col items-center justify-center gap-2 py-4 md:py-8 lg:py-10">
+        <p class="text-2xl font-bold text-primary">Tech Stack</p>
 
-        <div class="flex flex-col items-center gap-8">
-          <p class="text-2xl text-primary">The tech that i familiar with:</p>
+        <div class="flex flex-col items-center gap-16">
+          <p class="text-xl text-primary">
+            The tech & Tools that i familiar with:
+          </p>
           <div class="flex flex-wrap justify-center gap-16 *:drop-shadow-md">
             <img
               src="./src/assets/icons/HTML.svg"
